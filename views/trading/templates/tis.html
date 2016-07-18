@@ -1,0 +1,22 @@
+<ion-modal-view>
+  <ion-header-bar >
+    <div class="buttons">
+      <button class="button button-clear" ng-click="close_tis()">返回</button>
+    </div>
+    <h1 class="title">{{ log_title }}</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="card">
+      <div class="item item-text-wrap">
+        {{ tis }}
+      </div>
+      <div class="item item-divider">
+        <button ng-click="close_tis()" class="button button-balanced button-positive">
+          返回
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>
+
+

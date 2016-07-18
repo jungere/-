@@ -1,0 +1,18 @@
+<ion-view view-title="购买记录">
+  <ion-content>
+    <a href="#/app/payments" class="button button-block button-dark">购买债券</a>
+    <ion-list>
+      <div class="card" ng-repeat="rd in records"> 
+        <div class="item item-divider">
+          支出 ￥{{ rd.amount }}
+        </div>
+        <div class="item item-text-wrap">
+          {{ rd.remark }}
+        </div>
+        <div class="item item-divider">
+          <i class="icon ion-ios-clock-outline"></i>{{ rd.order_time }}
+        </div>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
